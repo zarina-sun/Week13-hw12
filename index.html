@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Полноценный цифровой продукт</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<h1>Органайзер задач</h1>
+
+<form id="taskForm">
+  <input type="text" id="taskInput" placeholder="Введите новую задачу" required />
+  <input type="email" id="emailInput" placeholder="Введите email" required />
+  <div id="errorMsg"></div>
+  <button type="submit">Добавить задачу</button>
+</form>
+
+<ul id="taskList"></ul>
+
+<button id="openModalBtn" style="margin-top: 30px; width: 100%;">Показать инструкцию</button>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <h2>Инструкция</h2>
+    <p>Добавляйте задачи через форму, кликая на задачу — отмечайте её выполненной.</p>
+    <p>Также можно листать изображения с помощью слайдера ниже.</p>
+    <button id="closeModalBtn">Закрыть</button>
+  </div>
+</div>
+
+<div class="slider">
+  <button class="prev">&lt;</button>
+  <img src="images/photo1.jpg" alt="Слайд" id="sliderImage" /> 
+  <button class="next">&gt;</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

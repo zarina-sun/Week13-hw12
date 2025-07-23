@@ -1,0 +1,140 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 15px;
+  background: #f7f9fc;
+  color: #222;
+}
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ccc;
+  margin-bottom: 30px;
+}
+input, button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+input:focus {
+  border-color: #2980b9;
+  outline: none;
+}
+button {
+  background: #2980b9;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+button:hover {
+  background: #1c5980;
+}
+
+#errorMsg {
+  color: #e74c3c;
+  min-height: 20px;
+  margin-top: 5px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+li {
+  background: white;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+li.completed {
+  text-decoration: line-through;
+  color: #7f8c8d;
+  background-color: #ecf0f1;
+}
+
+.modal {
+  display: none; 
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal.show {
+  display: flex;
+}
+.modal-content {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 15px #555;
+}
+.modal-content button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #2980b9;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+.modal-content button:hover {
+  background: #1c5980;
+}
+
+.slider {
+  position: relative;
+  max-width: 100%;
+  margin-top: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #ccc;
+}
+.slider img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  user-select: none;
+}
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  border: none;
+  color: white;
+  font-size: 22px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s;
+}
+.slider button:hover {
+  background: rgba(0,0,0,0.7);
+}
+.slider .prev {
+  left: 10px;
+}
+.slider .next {
+  right: 10px;
+}
